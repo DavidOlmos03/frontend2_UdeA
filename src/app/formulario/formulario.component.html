@@ -1,27 +1,29 @@
-<h2>Formulario</h2>
-<div>
-  <label for="id">ID:</label>
-  <input type="text" id="id" [(ngModel)]="id" required>
-</div>
-<div>
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" [(ngModel)]="nombre" required>
-</div>
-<div>
-  <label for="precio">Precio:</label>
-  <input type="number" id="precio" [(ngModel)]="precio" required>
-</div>
-<div>
-  <label for="urlImagen">URL de imagen:</label>
-  <input type="text" id="urlImagen" [(ngModel)]="urlImagen" required>
-</div>
-<button (click)="guardarDatos()">Guardar</button>
-
-<div *ngIf="datosIngresados">
-  <h2>Datos ingresados:</h2>
-  <p>ID: {{ datosIngresados.id }}</p>
-  <p>Nombre: {{ datosIngresados.nombre }}</p>
-  <p>Precio: {{ datosIngresados.precio }}</p>
-  <img [src]="datosIngresados.urlImagen" alt="Imagen" width="500" height="500">
+<div class = "container" >
+  <h2 class="text-center my-5">Formulario</h2>
+  <div class="mb-3">
+    <label for="id" class="form-label">ID:</label>
+    <input type="text" class="form-control" id="id" [(ngModel)]="id" required>
+  </div>
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" required>
+  </div>
+  <div class="mb-3">
+    <label for="precio" class="form-label">Precio:</label>
+    <input type="number" class="form-control" id="precio" [(ngModel)]="precio" required>
+  </div>
+  <div class="mb-3">
+    <label for="urlImagen" class="form-label">URL de imagen:</label>
+    <input type="text" class="form-control" id="urlImagen" [(ngModel)]="urlImagen" required>
+  </div>
+  <button (click)="guardarDatos()" class="btn btn-primary">Guardar</button>
+  
+  <div *ngIf="datosIngresados">
+    <h2>Datos ingresados:</h2>
+    <p>ID: {{ datosIngresados.id }}</p>
+    <p>Nombre: {{ datosIngresados.nombre }}</p>
+    <p>Precio: {{ datosIngresados.precio }}</p>
+    <img [src]="datosIngresados.urlImagen" alt="Imagen" width="500" height="500">
+  </div>
 </div>
 
