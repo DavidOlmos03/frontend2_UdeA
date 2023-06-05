@@ -21,7 +21,8 @@
     </div>
 
     <button (click)="guardarDatos()" class="btn btn-primary">Guardar</button>
-    <button (click)="enviarPost()" class="btn btn-primary">EnviarPost</button>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <!--<button (click)="enviarPost()" class="btn btn-primary">EnviarPost</button>-->
     <!--<button (click) ="obtenerDatos()" class="btn btn-primary">ObtenerDatos</button>-->
   </div>
   <div *ngIf="datosIngresados" class = "p-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
