@@ -1,0 +1,71 @@
+.superpuesto-formulario {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  width: 50%;
+  max-height: 100vh; /* Establecer una altura máxima para evitar que se salga de la pantalla */
+  overflow-y: scroll; /* Habilitar la barra de desplazamiento cuando el contenido exceda la altura máxima */
+  z-index: 9999;
+}
+.container-into-form {
+  max-height: 50vh;
+  border-radius: 20px;
+}
+
+.container{
+  position: relative;
+  /*overflow: auto; /* Habilitar la barra de desplazamiento cuando el contenido exceda el tamaño */
+  background-color: #686e68;
+  height: 100vh; /* Ajustar la altura al 100% del viewport */
+}
+.form-container{
+  /*overflow: auto; /* Habilitar la barra de desplazamiento */
+  /*overflow-y: scroll;*/
+  background-color: #686e68;
+}
+.buttom_Form{
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Relleno interno */
+  text-align: center; /* Alineación de texto */
+  /*text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Mostrar como elemento en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Márgenes */
+  cursor: pointer; /* Cursor al pasar por encima */
+  border-radius: 4px; /* Borde redondeado */
+}
+    
+/*OBS.NO VEO QUE ESTE APLICANDO LOS CAMBIOS A LA SCROLLBAR*########################3/
+
+
+/* Estilo personalizado para la barra de desplazamiento */
+.simplebar-scrollbar::before {
+  background-color: #ff5252;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  background-color: #cf3939;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 7px;
+}
+
+.simplebar-scrollbar.simplebar-vertical {
+  width: 5px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  height: 7px;
+}
+
+.simplebar-scrollbar.simplebar-horizontal {
+  height: 5px;
+}
