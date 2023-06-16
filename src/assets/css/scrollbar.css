@@ -1,0 +1,12 @@
+/* Estilos para la barra de desplazamiento */
+.simplebar-scrollbar::before,
+.simplebar-scrollbar::after {
+    border-radius: 10px; /* Bordes redondeados de la barra de desplazamiento */
+    background-color: rgb(157, 157, 247);
+    width: 10px;
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+.simplebar-scrollbar .simplebar-scrollbar-thumb {
+    border-radius: 10px; /* Bordes redondeados del pulgar de la barra de desplazamiento */
+}

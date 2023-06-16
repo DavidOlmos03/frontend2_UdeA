@@ -4,13 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  padding: 20px;
+  padding: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid #dddddd;
   border-radius: 20px;
   width: 50%;
   max-height: 100vh; /* Establecer una altura máxima para evitar que se salga de la pantalla */
-  overflow-y: scroll; /* Habilitar la barra de desplazamiento cuando el contenido exceda la altura máxima */
+  /*overflow-y: scroll; /* Habilitar la barra de desplazamiento cuando el contenido exceda la altura máxima */
   z-index: 9999;
+  margin-top: 3vh;
 }
 .container-into-form {
   max-height: 50vh;
@@ -21,13 +24,9 @@
   position: relative;
   /*overflow: auto; /* Habilitar la barra de desplazamiento cuando el contenido exceda el tamaño */
   background-color: #686e68;
-  height: 100vh; /* Ajustar la altura al 100% del viewport */
+  height: 8vh; /* Ajustar la altura al 100% del viewport */
 }
-.form-container{
-  /*overflow: auto; /* Habilitar la barra de desplazamiento */
-  /*overflow-y: scroll;*/
-  background-color: #686e68;
-}
+
 .buttom_Form{
   background-color: #4CAF50; /* Color de fondo */
   border: none; /* Sin borde */
@@ -42,30 +41,5 @@
   border-radius: 4px; /* Borde redondeado */
 }
     
-/*OBS.NO VEO QUE ESTE APLICANDO LOS CAMBIOS A LA SCROLLBAR*########################3/
-
-
+/*OBS.NO VEO QUE ESTE APLICANDO LOS CAMBIOS A LA SCROLLBAR*########################*/
 /* Estilo personalizado para la barra de desplazamiento */
-.simplebar-scrollbar::before {
-  background-color: #ff5252;
-}
-
-.simplebar-scrollbar.simplebar-visible::before {
-  background-color: #cf3939;
-}
-
-.simplebar-track.simplebar-vertical {
-  width: 7px;
-}
-
-.simplebar-scrollbar.simplebar-vertical {
-  width: 5px;
-}
-
-.simplebar-track.simplebar-horizontal {
-  height: 7px;
-}
-
-.simplebar-scrollbar.simplebar-horizontal {
-  height: 5px;
-}

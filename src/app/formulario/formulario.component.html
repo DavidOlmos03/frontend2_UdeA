@@ -1,59 +1,58 @@
 <head>
-  ...
-  <link rel="stylesheet" href="simplebar.component.css" />
+  <!--<link rel="stylesheet" href="simplebar.component.css" />-->
+<!--<link rel="stylesheet" href="scrollbar.css" />-->
 </head>
 <body>
   <div class="container">
     <button (click)="mostrarOcultarFormulario()" class="buttom_Form">Mostrar Formulario Producto</button>
   </div>
   
-  <div class="form-container">
-    <!-- Contenido del formulario aquí -->
-    <div *ngIf="mostrarFormulario" class="superpuesto-formulario" data-simplebar>
-      <div class="simplebar-content">
-        <!-- Contenido de tu formulario aquí -->
-        <!--<form (submit)="onSubmit()">-->
-          <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-            <h2 class="text-center my-5 display-2">Formulario <br>Producto</h2>
-            <div class="container-into-form bg-body-secondary">
-              <div class="mb-3">
-                <label for="id">ID:</label>
-                <input type="text" class="form-control" id="id" [(ngModel)]="id" required>
-              </div>
-              <div class="mb-3">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" required>
-              </div>
-              <div class="mb-3">
-                <label for="precio">Precio:</label>
-                <input type="number" class="form-control" id="precio" [(ngModel)]="precio" required>
-              </div>
-              <div class="mb-3">
-                <label for="urlImagen" class="form-label">URL de imagen:</label>
-                <input type="text" class="form-control" id="urlImagen" [(ngModel)]="urlImagen" required>
-              </div>
-              <!--<button type="submit">Enviar</button>-->
-              <button (click)="guardarDatos()" class="btn btn-primary">Guardar</button>
-              <div class="text-success">{{successMessage}}</div>
-              <div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
+  <!-- Contenido del formulario aquí -->
+  <div *ngIf="mostrarFormulario" class="superpuesto-formulario" data-simplebar>
+    <div class="simplebar-content">
+      <!-- Contenido de tu formulario aquí -->
+      <!--<form (submit)="onSubmit()">-->
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+          <h2 class="text-center display-3">Formulario <br>Producto</h2>
+          <div class="container-into-form bg-body-secondary">
+            <div class="mb-3">
+              <label for="id">ID:</label>
+              <input type="text" class="form-control" id="id" [(ngModel)]="id" required>
             </div>
+            <div class="mb-3">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="precio">Precio:</label>
+              <input type="number" class="form-control" id="precio" [(ngModel)]="precio" required>
+            </div>
+            <div class="mb-3">
+              <label for="urlImagen" class="form-label">URL de imagen:</label>
+              <input type="text" class="form-control" id="urlImagen" [(ngModel)]="urlImagen" required>
+            </div>
+            <!--<button type="submit">Enviar</button>-->
+            <button (click)="guardarDatos()" class="btn btn-primary">Guardar</button>
+            <div class="text-success">{{successMessage}}</div>
+            <div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
           </div>
-          <!--<div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
-          -->
-          <div *ngIf="datosIngresados" class="p-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
-            <h2 class="text-center my-5 display-4">Datos ingresados</h2>
-            <div class="container-into-form bg-body-secondary border">
-              <p>ID: {{ datosIngresados.id }}</p>
-              <p>Nombre: {{ datosIngresados.nombre }}</p>
-              <p>Precio: {{ datosIngresados.precio }}</p>
-            </div>
-            <div class="container-into-form text-center bg-body-light border">
-              <img [src]="datosIngresados.urlImagen" alt="Imagen" width="200" height="200">
-            </div>
+        </div>
+        <!--<div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
+        -->
+        <div *ngIf="datosIngresados" class="p-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
+          <h2 class="text-center my-5 display-4">Datos ingresados</h2>
+          <div class="container-into-form bg-body-secondary border">
+            <p>ID: {{ datosIngresados.id }}</p>
+            <p>Nombre: {{ datosIngresados.nombre }}</p>
+            <p>Precio: {{ datosIngresados.precio }}</p>
           </div>
-        <!--</form>-->
-      </div>  
-    </div>    
+          <div class="container-into-form text-center bg-body-light border">
+            <img [src]="datosIngresados.urlImagen" alt="Imagen" width="200" height="200">
+          </div>
+        </div>
+      <!--</form>-->
+    </div>  
+      
   </div>  
-  <script src="./formulario.component.js"></script>
+  <!--<script src="./formulario.component.js"></script>-->
 </body>

@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import simplebar from 'simplebar';
+
 //import { FormProdcutService } from '../form-prodcut.service';
 //import { ApiService } from '../form-prodcut.service';
 //import {modelFormProductI} from '../models/model-form-product.interface'
 //import { Observable } from 'rxjs';
 
+
+
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css','./simplebar.component.css']
+  styleUrls: ['./formulario.component.css']
 })
 
 export class FormularioComponent {
@@ -60,6 +64,13 @@ export class FormularioComponent {
       }
     ); 
   }
+  ngAfterViewInit() {
+    const container = document.querySelector('.superpuesto-formulario');
+    if (container) {
+      new simplebar(container as HTMLElement);
+    }
+  }
+  
     
 }
 
