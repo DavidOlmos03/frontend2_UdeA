@@ -27,8 +27,12 @@
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+<<<<<<< HEAD
               "node_modules/simplebar/dist/simplebar.min.css",
               "src/assets/css/scrollbar.css"
+=======
+              "node_modules/simplebar/dist/simplebar.min.css"
+>>>>>>> 84c89872f828c01d294a71a22a3981742c66ed79
             ],
             "scripts": []
           },
