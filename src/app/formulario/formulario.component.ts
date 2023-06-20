@@ -2,15 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import simplebar from 'simplebar';
 
-<<<<<<< HEAD
-=======
 
-
-
-
-
-
->>>>>>> 84c89872f828c01d294a71a22a3981742c66ed79
 //import { FormProdcutService } from '../form-prodcut.service';
 //import { ApiService } from '../form-prodcut.service';
 //import {modelFormProductI} from '../models/model-form-product.interface'
@@ -80,6 +72,12 @@ export class FormularioComponent {
     }
   }
   
-    
+  reiniciarDatos(): void {
+    this.id =  "";
+    this.nombre=  "";
+    this.precio= 0;
+    this.urlImagen = "";
+  }
+
 }
 

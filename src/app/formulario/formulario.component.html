@@ -32,9 +32,11 @@
               <input type="text" class="form-control" id="urlImagen" [(ngModel)]="urlImagen" required>
             </div>
             <!--<button type="submit">Enviar</button>-->
-            <button (click)="guardarDatos()" class="btn btn-primary">Guardar</button>
+            <button (click)="guardarDatos()" class="btn btn-primary">Guardar Producto</button> <!--Agregar 
+            boton para reiniciar el formulario y poder ingresar un nuevo producto-->
+            <button (click)="reiniciarDatos()" class="btn btn-primary">Reiniciar Formulario</button>
             <div class="text-success">{{successMessage}}</div>
-            <div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
+            <div *ngIf="errorMessage" class="error-message text-danger">{{errorMessage}}</div>
           </div>
         </div>
         <!--<div *ngIf="errorMessage" class="error-message text-danger">{{ errorMessage }}</div>
