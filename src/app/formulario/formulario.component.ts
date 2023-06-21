@@ -77,6 +77,9 @@ export class FormularioComponent {
     this.nombre=  "";
     this.precio= 0;
     this.urlImagen = "";
+    this.errorMessage = '';
+    this.successMessage = '';
+    this.mostrarFormulario = false;
   }
   /*Proof*/
 

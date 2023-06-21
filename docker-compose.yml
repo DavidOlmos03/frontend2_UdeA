@@ -1,2 +1,12 @@
 ##Aqui se crea una base de conexion mas amplia (una composicion de varios contenedores) de los contenedores??
 ##posterior/ se crea el compose en docker
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+###Prueba branche
+#Esto aún no funciona
