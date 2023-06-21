@@ -78,6 +78,7 @@ export class FormularioComponent {
     this.precio= 0;
     this.urlImagen = "";
   }
+  /*Proof*/
 
 }
 
